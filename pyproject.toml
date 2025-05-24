@@ -1,0 +1,37 @@
+[project]
+name = "argparse-oop"
+version = "0.1.0"
+description = "Argparse OOP example"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = ["pyright>=1.1.401", "pytest>=8.3.5", "ruff>=0.11.11"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+my-cli = "argparse_oop.cli.main:main"
+
+[tool.ruff.lint]
+extend-select = [
+    "ANN",
+    "ARG",
+    "B021",
+    "DOC",
+    "D1",
+    "ERA001",
+    "N",
+    "S105",
+    "S106",
+    "S107",
+    "T20",
+    "TD004",
+    "TD005",
+    "TD006",
+    "TD007",
+]
+ignore = ["D100"]
