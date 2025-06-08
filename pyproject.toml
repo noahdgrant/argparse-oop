@@ -35,4 +35,4 @@ extend-select = [
     "TD006",
     "TD007",
 ]
-ignore = ["D100"]
+ignore = ["D100", "D104"]
